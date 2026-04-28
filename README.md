@@ -1,32 +1,30 @@
-## Power_BI_Sales_Project
-# 📊 Sales & Business Intelligence Dashboard — Power BI Project
+# Power_BI_Sales_Project
+## 📊 Sales & Business Intelligence Dashboard — Power BI Project
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-Measures-blue?style=for-the-badge)
 ![Data Model](https://img.shields.io/badge/Data%20Model-Star%20Schema-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Live%20%7C%20Web%20Embedded-brightgreen?style=for-the-badge)
 
-> A multi-page interactive Power BI dashboard built to analyze sales performance, regional distribution, product trends, and customer insights — with full web embed capability via Power BI Service.
+A multi-page interactive Power BI dashboard built to analyze sales performance, regional distribution, product trends, and customer insights — with full web embed capability via Power BI Service.
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| **Power BI Desktop** | Report authoring, data modeling, DAX |
+| **Power BI Service** | Publishing, sharing, and web embedding |
+| **DAX** | Calculated measures and KPIs |
+| **Esri ArcGIS** | Geographic mapping visual |
+| **Star Schema Modeling** | Optimized data model structure |
+| **Power Query (M)** | Data transformation and loading |
 
 ---
 
 ## 🔗 Live Demo
 
-> 🌐 This report has been published and embedded on the web via **Power BI Service**.  
-> You can view the live, interactive version here: **[→ View Embedded Report](#)** *(replace with your embed link)*
-
----
-
-## 📌 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Dashboard Pages](#-dashboard-pages)
-- [Data Model](#-data-model)
-- [Key Metrics & DAX Measures](#-key-metrics--dax-measures)
-- [Tools & Technologies](#-tools--technologies)
-- [How to Embed in a Website](#-how-to-embed-in-a-website)
-- [How to Run Locally](#-how-to-run-locally)
-- [Skills Demonstrated](#-skills-demonstrated)
+🌐 This report has been published and embedded on the web via **Power BI Service**.  
+ You can view the live, interactive version here: **[→ View Embedded Report](#)** *(replace with your embed link)*
 
 ---
 
@@ -69,7 +67,9 @@ The landing page provides a high-level summary of business performance through K
 | 🎛️ Slicer | Filter by **Country** |
 | 🎛️ Slicer | Filter by **Product Category** |
 
-> **All visuals are cross-filtered** — clicking any data point dynamically updates all other visuals on the page.
+**All visuals are cross-filtered** — clicking any data point dynamically updates all other visuals on the page.
+
+<img width="1584" height="827" alt="image" src="https://github.com/user-attachments/assets/8329a510-45e3-40c6-9f55-58e65c733d1f" />
 
 ---
 
@@ -84,7 +84,9 @@ An interactive map-driven page that allows geographic drill-down into sales perf
 | 🗺️ Esri ArcGIS Map | **Sales by Country & Region** — Plotted by Total Revenue |
 | 🎛️ Slicer | Filter by **City** |
 
-> Uses **Esri ArcGIS Maps** integration within Power BI for rich geographic visualization. Revenue values are mapped as bubble sizes across countries and regions.
+Uses **Esri ArcGIS Maps** integration within Power BI for rich geographic visualization. Revenue values are mapped as bubble sizes across countries and regions.
+
+<img width="1599" height="808" alt="image" src="https://github.com/user-attachments/assets/fe16bc38-5f38-4488-9c71-f2aa5501622b" />
 
 ---
 
@@ -99,7 +101,9 @@ A dedicated page for deep-diving into product-level performance.
 | 🌳 Treemap | **Sales by Product Name** — USD Total Sales weighted by area |
 | 🎛️ Slicer | Filter by **Product Category** |
 
-> The treemap makes it immediately clear which products drive the most revenue through visual weighting.
+The treemap makes it immediately clear which products drive the most revenue through visual weighting.
+
+<img width="1522" height="809" alt="image" src="https://github.com/user-attachments/assets/800463c2-1926-40b4-8c03-15defac1ad01" />
 
 ---
 
@@ -114,7 +118,9 @@ Customer-level analysis that connects revenue contribution to profitability.
 | 📊 Combo Chart (Line + Column) | **Revenue & Profit Margin by Customer** — dual-axis combo chart |
 | 🎛️ Slicer | Filter by **Customer Name** |
 
-> This combo chart overlays **Total Revenue** (columns) with **Profit Margin** (line) per customer — allowing easy identification of high-revenue but low-margin customers.
+ This combo chart overlays **Total Revenue** (columns) with **Profit Margin** (line) per customer — allowing easy identification of high-revenue but low-margin customers.
+ 
+<img width="1582" height="818" alt="image" src="https://github.com/user-attachments/assets/87fa0ce8-6eac-4e07-98ba-505aac1c2038" />
 
 ---
 
@@ -129,19 +135,27 @@ Dim_Date ──────────────┼──► Facts_Table (Cen
                         │
 Dim_Customers ─────────┘
 ```
+<img width="1515" height="801" alt="image" src="https://github.com/user-attachments/assets/1420eeec-c4f0-4325-bc19-6d45d2d91838" />
 
 ### Tables & Key Columns
 
 #### `Facts_Table` *(Fact Table)*
 Central table containing all transactional sales data.
 
-| Column | Description |
-|---|---|
-| `SalesAmount` | Raw sales amount |
-| `Total Revenue` | Calculated revenue measure |
-| `Profit` | Profit per transaction |
+Columns and their Description 
+| `Total Revenue` | Calculated revenue measure | 
+<img width="746" height="36" alt="image" src="https://github.com/user-attachments/assets/be0ba4f3-5fac-458f-9bae-6cff971f5d81" />
 | `ProfitMargin` | Margin as a ratio |
+<img width="857" height="35" alt="image" src="https://github.com/user-attachments/assets/6a82e495-b63a-4734-aa5d-73c5ef3501d2" />
 | `USD_Total Sales` | Revenue normalized to USD |
+<img width="1098" height="33" alt="image" src="https://github.com/user-attachments/assets/6d79746b-3b14-4611-ab9d-d1da6329a403" />
+| `Profit` | Profit per transaction |
+
+| `SalesAmount` | Raw sales amount |
+
+Here is the facts_table
+
+<img width="1549" height="829" alt="image" src="https://github.com/user-attachments/assets/5806e811-cb23-4044-a724-cc4a1cc9e2fb" />
 
 #### `Dim_Products` *(Dimension)*
 
@@ -149,6 +163,8 @@ Central table containing all transactional sales data.
 |---|---|
 | `ProductName` | Name of the product |
 | `Category` | Product category |
+
+<img width="1515" height="829" alt="image" src="https://github.com/user-attachments/assets/5f838585-4486-41d5-b486-89384245efa8" />
 
 #### `Dim_Customers` *(Dimension)*
 
@@ -159,12 +175,16 @@ Central table containing all transactional sales data.
 | `Region` | Regional grouping |
 | `City` | Customer city |
 
+<img width="1533" height="830" alt="image" src="https://github.com/user-attachments/assets/89ddd39e-237a-48f6-aa7b-3284f08251a6" />
+
 #### `Dim_Date` *(Date Dimension)*
 
 | Column | Description |
 |---|---|
 | `Month` | Month of transaction |
 | *(standard date hierarchy)* | Enables time intelligence |
+
+<img width="1520" height="830" alt="image" src="https://github.com/user-attachments/assets/dc0dc4a8-c1c8-41c0-b288-a761d681d16c" />
 
 > Relationships are managed through Power BI's relationship editor with standard **many-to-one** joins from the fact table to each dimension.
 
@@ -188,20 +208,7 @@ Total Profit = SUM(Facts_Table[Profit])
 USD_Total Sales = SUMX(Facts_Table, Facts_Table[SalesAmount] * [Exchange Rate])
 ```
 
-> These measures power the KPI cards and are reused across all four report pages, ensuring consistent, single-source-of-truth calculations.
-
----
-
-## 🛠️ Tools & Technologies
-
-| Tool | Purpose |
-|---|---|
-| **Power BI Desktop** | Report authoring, data modeling, DAX |
-| **Power BI Service** | Publishing, sharing, and web embedding |
-| **DAX** | Calculated measures and KPIs |
-| **Esri ArcGIS** | Geographic mapping visual |
-| **Star Schema Modeling** | Optimized data model structure |
-| **Power Query (M)** | Data transformation and loading |
+ These measures power the KPI cards and are reused across all four report pages, ensuring consistent, single-source-of-truth calculations.
 
 ---
 
@@ -212,22 +219,32 @@ Once the report is published to **Power BI Service**, follow these steps to embe
 ### Step 1 — Publish the Report to Power BI Service
 
 1. In **Power BI Desktop**, click **Home → Publish**
+   <img width="1319" height="192" alt="image" src="https://github.com/user-attachments/assets/4786bcdc-03db-4cd9-8603-1e1d19f7fe3a" />
+
 2. Select your target **Workspace** (e.g., "My Workspace" or a team workspace)
+   <img width="1590" height="717" alt="image" src="https://github.com/user-attachments/assets/94841571-cbf2-4c6a-8ce7-d219aee57248" />
+
 3. Wait for the confirmation: *"Publishing to Power BI... Success!"*
+   <img width="1583" height="711" alt="image" src="https://github.com/user-attachments/assets/8de716c9-f260-45ec-bd41-1f71cd6b4534" />
+
 4. Click **"Open [report name] in Power BI"** to verify it opens in your browser
+   <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/18a59262-5770-4da9-87d8-4242c113a83c" />
+
 
 ---
 
 ### Step 2 — Generate a Public Embed Link
 
 1. Open the report in **Power BI Service** (`app.powerbi.com`)
-2. Click **File → Embed report → Publish to web (public)**
+   
+3. Click **File → Embed report → Publish to web (public)**
+   <img width="1600" height="821" alt="image" src="https://github.com/user-attachments/assets/a16a46c5-66d3-4da5-a221-1b60df38d64c" />
 
-   > ⚠️ **Note:** This option makes the report publicly accessible to anyone with the link. Do not use this for sensitive/confidential data.
+    ⚠️ **Note:** This option makes the report publicly accessible to anyone with the link. Do not use this for sensitive/confidential data.
 
-3. In the dialog that appears, click **"Create embed code"**
-4. Accept the terms and click **Publish**
-5. Power BI will generate:
+4. In the dialog that appears, click **"Create embed code"**
+5. Accept the terms and click **Publish**
+6. Power BI will generate:
    - A **shareable link** (for direct access)
    - An **HTML iframe snippet** (for embedding in websites)
 
@@ -281,18 +298,6 @@ Paste the `<iframe>` code into your HTML file or CMS (e.g., GitHub Pages, WordPr
 
 ---
 
-## ▶️ How to Run Locally
-
-To explore or modify this report in Power BI Desktop:
-
-1. **Download and install** [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
-2. **Clone or download** this repository
-3. Open `PowerBI_Project.pbix` in Power BI Desktop
-4. If prompted about data source credentials, configure them under **Home → Transform data → Data source settings**
-5. Click **Refresh** to reload the data
-
----
-
 ## ✅ Skills Demonstrated
 
 This project showcases the following data analytics and BI competencies:
@@ -307,23 +312,3 @@ This project showcases the following data analytics and BI competencies:
 - ✅ **Business Storytelling** — Structured pages that tell a coherent analytical narrative
 
 ---
-
-## 📁 Repository Structure
-
-```
-📂 PowerBI-Sales-Dashboard/
-├── 📄 PowerBI_Project.pbix     # Main Power BI report file
-└── 📄 README.md                # This file
-```
-
----
-
-## 👤 Author
-
-**[Your Name]**  
-📧 [your.email@example.com]  
-🔗 [LinkedIn Profile](#) | [Portfolio Website](#)
-
----
-
-*Built with Power BI Desktop · Published via Power BI Service · © 2026*
