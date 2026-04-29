@@ -2,8 +2,11 @@
 ## 📊 Sales & Business Intelligence Dashboard — Power BI Project
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
 ![DAX](https://img.shields.io/badge/DAX-Measures-blue?style=for-the-badge)
+
 ![Data Model](https://img.shields.io/badge/Data%20Model-Star%20Schema-green?style=for-the-badge)
+
 ![Status](https://img.shields.io/badge/Status-Live%20%7C%20Web%20Embedded-brightgreen?style=for-the-badge)
 
 A multi-page interactive Power BI dashboard built to analyze sales performance, regional distribution, product trends, and customer insights — with full web embed capability via Power BI Service.
@@ -242,9 +245,12 @@ Once the report is published to **Power BI Service**, follow these steps to embe
 
     ⚠️ **Note:** This option makes the report publicly accessible to anyone with the link. Do not use this for sensitive/confidential data.
 
-4. In the dialog that appears, click **"Create embed code"**
+4. In the dialog that appears, click copy paste the html link
+ <img width="1155" height="672" alt="image" src="https://github.com/user-attachments/assets/fa844c5f-a109-4558-83a0-2545b2b1c943" />
+
 5. Accept the terms and click **Publish**
-6. Power BI will generate:
+   
+7. Power BI will generate:
    - A **shareable link** (for direct access)
    - An **HTML iframe snippet** (for embedding in websites)
 
